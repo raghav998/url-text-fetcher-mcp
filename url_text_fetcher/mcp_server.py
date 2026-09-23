@@ -1,4 +1,4 @@
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 import requests
 from bs4 import BeautifulSoup
 from typing import List
@@ -6,7 +6,7 @@ import asyncio
 import sys
 
 
-mcp = FastMCP("URL Text Fetcher")
+mcp = MCPServer("URL Text Fetcher")
 
 
 @mcp.tool()
